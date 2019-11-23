@@ -1,1 +1,28 @@
 // Mixins Here
+
+.button (@color,@font-color,@font-size,@width,@height,@padding,@margin,@border-radius,@text-align){
+    background: @color;
+    color: @font-color;
+    font-size: @font-size;
+    width: @width;
+    height: @height;
+    padding: @padding;
+    margin: @margin;
+    border-radius: @border-radius;
+    text-align: @text-align;
+}
+
+.flex-display(@flow, @justify, @align-c, @align-i){
+    display:flex;
+    flex-flow: @flow;
+    justify-content: @justify;
+    align-content: @align-c;
+    align-items: @align-i;
+}
+
+.flex-display-nav {
+    display:flex;
+    flex-flow: column;
+    align-content: center;
+    align-items:center;
+}
